@@ -33,6 +33,21 @@ const questions = [
         type: "input", // ask kevin how to create a drop down type list. this list prompt must have choices but i want the user to create his/her own list. would i make the choices and open array?
         message: "List your collaborators.",
         name: "credits"
+    },
+    {
+        type: "input",
+        message: "Add any Licensing you may have.",
+        name: "license"
+    },
+    {
+        type: "input",
+        message: "Test.",
+        name: "test"
+    },
+    {
+        type: "input",
+        message: "Write down any questions.",
+        name: "question"
     }
 ];
 // come up with readme type questions.

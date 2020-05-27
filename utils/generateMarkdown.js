@@ -25,6 +25,18 @@ ${data.usage}\n
 ${data.credits}\n
 **
 
+#
+${data.license}\n
+**
+
+#
+${data.test}\n
+**
+
+#
+${data.question}\n
+**
+
 ## Question
 *Github email address: ${data.email}\n
 **
