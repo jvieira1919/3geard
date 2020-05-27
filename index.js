@@ -1,4 +1,7 @@
 const inquirer = require("inquirer");
+const fs= require("fs");
+const generatedMarkdown = require("./utils/generateMarkdown");
+const path = require("path");
 
 const questions = [
     {
@@ -9,10 +12,10 @@ const questions = [
     {
         type: "input",
         message: "Please write your description here.",
-        name: "data"
+        name: "descript"
     },
     {
-        type: "list",
+        type: "input",
         message: "table of content",
         name: "table"
     },
@@ -27,7 +30,7 @@ const questions = [
         name: "usage"
     },
     {
-        type: "list", // ask kevin how to create a drop down type list. this list prompt must have choices but i want the user to create his/her own list. would i make the choices and open array?
+        type: "input", // ask kevin how to create a drop down type list. this list prompt must have choices but i want the user to create his/her own list. would i make the choices and open array?
         message: "List your collaborators.",
         name: "credits"
     }
@@ -39,17 +42,17 @@ const questions = [
 
 
 function writeToFile(fileName, data) {
-    //
+    return fs.writeToFile(path.join(process.cwd(), fileName),data, function(err, result){
+        if(err) console.log("error", err);
+    });
 }
 
 function init() {
     inquirer.prompt(questions).then(function (response) {
-        //ask kevin, would i post the information to the generatedMarkdown?
-        //how would i call my changes into a new file?
-        console.log("success!");
+     writeToFile("log.txt", generatedMarkdown({...response}))
 });
 }
 
 init();
-//generatedMarkdown(data);
+generatedMarkdown(data);
 

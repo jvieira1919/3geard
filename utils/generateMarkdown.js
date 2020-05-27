@@ -1,7 +1,34 @@
+//The "/n" character is used to find a newline character.
+
 function generateMarkdown(data) {
   return `
-# ${data.title}
-   "hello world"
+# ${data.title}\n  
+**
+
+#
+${data.descript}\n
+**
+
+#
+${data.table}\n
+**
+
+#
+${data.installation}\n
+**
+
+#
+${data.usage}\n
+**
+
+#
+${data.credits}\n
+**
+
+## Question
+*Github email address: ${data.email}\n
+**
+
 `;
 }
 
