@@ -59,39 +59,15 @@ SO THAT I can easily put together a good README for a new project
 * The generated README includes 1 badge that's specific to the repository.
 
 ```
-Ask the user a series of questions to gather the information for each section.
-Add the rest of the Markdown to the generatemarkdown.js file.
+Asked the user a series of questions to gather the information for each section.
+Added the rest of the Markdown to the generatemarkdown.js file.
 Output the generated Markdown to a README.md file.
 ```
 - - -
 
-## Commit Early and Often
+* A video demonstration of the entirety of the app's functionality is provided.
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+*https://drive.google.com/file/d/1IL-GMAd-z4_oGw2JyL8My8swPXwOuhBG/view
 
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
-
-Follow these guidelines for committing:
-
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
-
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We would like you to have more than 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* A video demonstrating the entirety of the app's functionality 
-
-* A generated README.md file for a project repo.
-
-* The URL of the GitHub repository
 
