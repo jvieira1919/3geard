@@ -1,5 +1,5 @@
 const inquirer = require("inquirer");
-const fs= require("fs");
+const fs = require("fs");
 const generatedMarkdown = require("./utils/generateMarkdown");
 const path = require("path");
 
@@ -13,11 +13,6 @@ const questions = [
         type: "input",
         message: "Please write your description here.",
         name: "descript"
-    },
-    {
-        type: "input",
-        message: "table of content",
-        name: "table"
     },
     {
         type: "input",
@@ -41,7 +36,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "Test.",
+        message: "What is the test command line?",
         name: "test"
     },
     {
@@ -57,17 +52,17 @@ const questions = [
 
 
 function writeToFile(fileName, data) {
-    return fs.writeToFile(path.join(process.cwd(), fileName),data, function(err, result){
-        if(err) console.log("error", err);
+    return fs.writeFile(path.join(process.cwd(), fileName), data, function (err, result) {
+        if (err) console.log("error", err);
     });
 }
 
 function init() {
     inquirer.prompt(questions).then(function (response) {
-     writeToFile("log.txt", generatedMarkdown({...response}))
-});
+        writeToFile("log.txt", generatedMarkdown({ ...response }))
+    });
 }
 
 init();
-generatedMarkdown(data);
+
 

@@ -10,35 +10,38 @@ ${data.descript}\n
 **
 
 #
-${data.table}\n
+* [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [License](#license)
 **
 
 #
-${data.installation}\n
+${data.installation}
 **
 
 #
-${data.usage}\n
+${data.usage}
 **
 
 #
-${data.credits}\n
+${data.credits}
 **
 
 #
-${data.license}\n
+${data.license}
 **
 
-#
-${data.test}\n
+## Test
+* You can run a test with command line ${data.test}
 **
 
-#
-${data.question}\n
+## Questions
+${data.question}
 **
 
 ## Question
-*Github email address: ${data.email}\n
+*Github email address: ${data.email}
 **
 
 `;
